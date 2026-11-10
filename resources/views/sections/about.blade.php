@@ -9,7 +9,7 @@
         <div class="mx-auto max-w-7xl">
             <h2 id="about-heading" class="font-display text-3xl leading-heading font-semibold sm:text-4xl lg:text-6xl">{{ $aboutHeader ?: __('About') }}</h2>
             @if($aboutCopy)
-                <div class="rich-copy mt-5 text-lg leading-normal sm:mt-6 sm:text-2xl lg:mt-10 lg:text-3xl">
+                <div class="rich-copy mt-5 text-lg leading-normal sm:mt-6 sm:text-2xl lg:mt-10">
                     {!! $aboutCopy !!}
                 </div>
             @endif
