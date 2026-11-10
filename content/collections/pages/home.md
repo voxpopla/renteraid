@@ -24,6 +24,7 @@ how_it_works:
   steps:
     -
       id: bULzrLXV
+      open_on_load: true
       header: 'Determine your eligibility'
       copy:
         -
@@ -123,6 +124,7 @@ how_it_works:
               text: 'You should know before you apply that people who are eligible may not end up receiving help from RenterAid. Many people in L.A. County need and deserve help and resources are limited. If we are not able to provide legal or financial support directly, we will try to connect you to other programs.'
     -
       id: 57w6PQj5
+      open_on_load: false
       header: 'Gather your information'
       copy:
         -
@@ -211,6 +213,7 @@ how_it_works:
           type: paragraph
     -
       id: TIpmGcLk
+      open_on_load: false
       header: 'Submit your application'
       copy:
         -
@@ -332,6 +335,7 @@ how_it_works:
           type: paragraph
     -
       id: rva9BlRX
+      open_on_load: false
       header: 'Wait for us to reach out'
       copy:
         -
@@ -409,6 +413,7 @@ faqs:
   questions:
     -
       id: rXjC1FZQ
+      open_on_load: false
       header: 'How does this process work?'
       copy:
         -
@@ -509,6 +514,7 @@ faqs:
                       text: ' If you have court papers for an eviction, we will send your information (with your consent) to a legal services provider. You do not need to be approved for financial support to get free legal help.'
     -
       id: EDejtxjO
+      open_on_load: false
       header: 'How long does it take to complete the application?'
       copy:
         -
@@ -519,6 +525,7 @@ faqs:
               text: 'Most people finish the application in about 10-15 minutes.'
     -
       id: 7zNhSmsY
+      open_on_load: false
       header: 'How long will it take to find out if I will receive support?'
       copy:
         -
@@ -570,6 +577,7 @@ faqs:
           type: paragraph
     -
       id: qYy9hioH
+      open_on_load: false
       header: 'What if I don’t have all of the information requested in the application?'
       copy:
         -
@@ -592,6 +600,7 @@ faqs:
               text: 'You will eventually need to share certain documents before we can provide help. For example: ID, lease, proof of address, proof of income, and so on.'
     -
       id: Y3bmZpSC
+      open_on_load: false
       header: 'Who will be contacting me?'
       copy:
         -
@@ -701,6 +710,7 @@ faqs:
               text: 'RenterAid staff will never ask you to pay to apply or to get help.'
     -
       id: nkUNwN18
+      open_on_load: false
       header: 'How will I be contacted?'
       copy:
         -
@@ -804,6 +814,7 @@ faqs:
               text: 'If we cannot reach you after 3 tries over 14 days, your application will be marked inactive. If someone else should be contacted when we cannot reach you, you can list them in the application.'
     -
       id: PnUsLu8v
+      open_on_load: false
       header: 'How long will it take to receive financial support or legal assistance?'
       copy:
         -
@@ -889,6 +900,7 @@ faqs:
                       text: ' of the referral.'
     -
       id: 721Yr4jD
+      open_on_load: false
       header: 'How long will I be eligible to receive support?'
       copy:
         -
@@ -929,6 +941,7 @@ faqs:
                       text: "If you experience another crisis, you can submit a new application for help. However, total support across applications and events cannot last longer than 24 months.\_"
     -
       id: oQkHauzm
+      open_on_load: false
       header: 'Where else can I get help?'
       copy:
         -
@@ -1061,6 +1074,7 @@ faqs:
               text: 'You can call the National Human Trafficking Hotline at (888) 373-7888.'
     -
       id: 3rdPbp9yBHgkzW13LAT9f
+      open_on_load: false
       header: 'If I am eligible for RenterAid, but am not selected to receive support, when can I re-apply?'
       copy:
         -
@@ -1071,6 +1085,7 @@ faqs:
               text: 'You can reapply at any time if something changes, such as your income, who lives in your home, or your housing situation. For example, you should reapply if you receive an eviction notice. A new application is reviewed as of the date you send it, and you’ll get a new eligibility decision email the same day.'
     -
       id: dwmqtmxxpq8jea1E8pAWE
+      open_on_load: false
       header: 'What can I do if I made a mistake on my application or left something out?'
       copy:
         -
@@ -1093,6 +1108,7 @@ faqs:
               text: 'Please don’t send the same application more than once if nothing has changed, because it can slow things down.'
     -
       id: SLZeg-48VKK5A0qLScaDr
+      open_on_load: false
       header: 'I have concerns about this process. What can I do about it?'
       copy:
         -
@@ -1163,6 +1179,7 @@ faqs:
                       text: 'You have the right to language access. If you need help with translation, [CLICK/CALL/EMAIL?]'
     -
       id: LwR91hExNKavzC9nrHJrf
+      open_on_load: false
       header: 'What documents or proof do I need?'
       copy:
         -

@@ -89,6 +89,13 @@ tabs:
                           validate:
                             - required
                       -
+                        handle: open_on_load
+                        field:
+                          type: toggle
+                          display: Open on load
+                          instructions: Expand this item automatically when the page loads.
+                          default: false
+                      -
                         handle: copy
                         field:
                           type: bard
@@ -172,6 +179,13 @@ tabs:
                           display: Question
                           validate:
                             - required
+                      -
+                        handle: open_on_load
+                        field:
+                          type: toggle
+                          display: Open on load
+                          instructions: Expand this item automatically when the page loads.
+                          default: false
                       -
                         handle: copy
                         field:
