@@ -43,9 +43,9 @@
                     <p class="body-copy-secondary font-bold text-zinc-900">{{ $logoTagline }}</p>
                 @endif
                 @if(count($logos ?? []))
-                    <div class="mt-4 flex flex-wrap items-center gap-x-8 gap-y-6 sm:mt-6 lg:mt-8">
+                    <div class="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:mt-6 lg:mt-8">
                         @foreach($logos as $logo)
-                            <img src="{{ $logo->url() }}" alt="{{ $logo->get('alt') ?? '' }}" class="h-12 w-auto max-w-36 object-contain" loading="lazy">
+                            <img src="{{ $logo->url() }}" alt="{{ $logo->get('alt') ?? '' }}" class="h-27 w-auto max-w-full object-contain sm:max-w-81" loading="lazy">
                         @endforeach
                     </div>
                 @endif
