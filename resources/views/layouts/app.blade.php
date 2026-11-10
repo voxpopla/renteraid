@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ $title ?? Statamic\Facades\Site::current()->name() }}</title>
+        @include('partials.seo')
         <link rel="stylesheet" href="https://use.typekit.net/kfw6yxh.css">
         @vite(['resources/css/site.css', 'resources/js/site.js'])
     </head>

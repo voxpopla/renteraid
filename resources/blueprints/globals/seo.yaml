@@ -1,0 +1,292 @@
+title: SEO
+sections:
+  general:
+    display: General
+    fields:
+      - handle: site_name
+        field:
+          localizable: true
+          type: text
+          display: 'Site Name'
+          instructions: 'Used in social previews and website structured data.'
+      - handle: default_title
+        field:
+          localizable: true
+          type: text
+          display: 'Default SEO Title'
+          instructions: 'Used when the layout does not supply a page title. Aim for about 50–60 characters.'
+      - handle: title_suffix
+        field:
+          localizable: true
+          type: text
+          display: 'Title Suffix'
+          instructions: 'Optional text appended to every title, such as your organization name.'
+          width: 75
+      - handle: title_separator
+        field:
+          localizable: true
+          type: text
+          display: 'Title Separator'
+          default: '|'
+          width: 25
+      - handle: description
+        field:
+          localizable: true
+          type: textarea
+          display: 'Meta Description'
+          instructions: 'A concise summary of the website. Aim for about 150–160 characters.'
+      - handle: author
+        field:
+          localizable: true
+          type: text
+          display: Author
+      - handle: canonical_base_url
+        field:
+          localizable: true
+          type: text
+          input_type: url
+          display: 'Canonical Site URL'
+          instructions: 'Optional production origin, such as https://example.org (no path or query). Each page keeps its own path. Leave blank to use the current site URL.'
+          validate:
+            - nullable
+            - url:http,https
+            - 'regex:~^https?://[^/?#]+/?$~i'
+      - handle: noindex
+        field:
+          localizable: true
+          type: toggle
+          display: 'Discourage Search Indexing'
+          instructions: 'Adds noindex to every page. Enable only if the entire website should stay out of search results.'
+          default: false
+          width: 50
+      - handle: nofollow
+        field:
+          localizable: true
+          type: toggle
+          display: 'Discourage Following Links'
+          instructions: 'Adds nofollow to every page.'
+          default: false
+          width: 50
+  social:
+    display: 'Social Sharing'
+    fields:
+      - handle: og_title
+        field:
+          localizable: true
+          type: text
+          display: 'Open Graph Title'
+          instructions: 'Falls back to the SEO title.'
+      - handle: og_description
+        field:
+          localizable: true
+          type: textarea
+          display: 'Open Graph Description'
+          instructions: 'Falls back to the meta description.'
+      - handle: og_image
+        field:
+          localizable: true
+          type: assets
+          container: assets
+          max_files: 1
+          restrict: true
+          display: 'Open Graph Image'
+          instructions: 'Default sharing image. A 1200 × 630 pixel JPG or PNG works well.'
+          validate:
+            - 'mimes:jpg,jpeg,png,webp'
+      - handle: og_image_alt
+        field:
+          localizable: true
+          type: text
+          display: 'Open Graph Image Alt Text'
+          instructions: 'Falls back to the selected asset’s alt text.'
+      - handle: og_type
+        field:
+          localizable: true
+          type: select
+          display: 'Open Graph Type'
+          options:
+            website: Website
+            article: Article
+          default: website
+          width: 50
+      - handle: og_locale
+        field:
+          localizable: true
+          type: text
+          display: 'Open Graph Locale'
+          placeholder: en_US
+          instructions: 'Language and territory, such as en_US.'
+          validate:
+            - nullable
+            - 'regex:/^[a-z]{2}_[A-Z]{2}$/'
+          width: 50
+      - handle: facebook_app_id
+        field:
+          localizable: true
+          type: text
+          display: 'Facebook App ID'
+      - handle: twitter_card
+        field:
+          localizable: true
+          type: select
+          display: 'X / Twitter Card Style'
+          options:
+            summary: Summary
+            summary_large_image: 'Summary with Large Image'
+          default: summary_large_image
+      - handle: twitter_site
+        field:
+          localizable: true
+          type: text
+          display: 'X / Twitter Site Handle'
+          placeholder: '@organization'
+          width: 50
+      - handle: twitter_creator
+        field:
+          localizable: true
+          type: text
+          display: 'X / Twitter Creator Handle'
+          placeholder: '@creator'
+          width: 50
+      - handle: twitter_title
+        field:
+          localizable: true
+          type: text
+          display: 'X / Twitter Title'
+          instructions: 'Falls back to the Open Graph title, then the SEO title.'
+      - handle: twitter_description
+        field:
+          localizable: true
+          type: textarea
+          display: 'X / Twitter Description'
+          instructions: 'Falls back to the Open Graph description, then the meta description.'
+      - handle: twitter_image
+        field:
+          localizable: true
+          type: assets
+          container: assets
+          max_files: 1
+          restrict: true
+          display: 'X / Twitter Image'
+          instructions: 'Falls back to the Open Graph image.'
+          validate:
+            - 'mimes:jpg,jpeg,png,webp'
+      - handle: twitter_image_alt
+        field:
+          localizable: true
+          type: text
+          display: 'X / Twitter Image Alt Text'
+          instructions: 'Describe the image. If blank, uses the selected asset’s alt text.'
+  identity:
+    display: 'Organization & Structured Data'
+    fields:
+      - handle: structured_data
+        field:
+          localizable: true
+          type: toggle
+          display: 'Enable Structured Data'
+          instructions: 'Outputs Organization and WebSite JSON-LD to help search engines understand the website.'
+          default: true
+      - handle: organization_name
+        field:
+          localizable: true
+          type: text
+          display: 'Organization Name'
+          instructions: 'Falls back to the site name.'
+      - handle: organization_logo
+        field:
+          localizable: true
+          type: assets
+          container: assets
+          max_files: 1
+          restrict: true
+          display: 'Organization Logo'
+          validate:
+            - 'mimes:jpg,jpeg,png,webp,svg'
+      - handle: organization_email
+        field:
+          localizable: true
+          type: text
+          input_type: email
+          display: 'Contact Email'
+          validate:
+            - nullable
+            - email
+          width: 50
+      - handle: organization_phone
+        field:
+          localizable: true
+          type: text
+          display: 'Contact Phone'
+          instructions: 'Include the country code.'
+          width: 50
+      - handle: social_profiles
+        field:
+          localizable: true
+          type: grid
+          display: 'Official Profile URLs'
+          instructions: 'Official social or organization profiles used as sameAs links in structured data.'
+          add_row: 'Add Profile'
+          fields:
+            - handle: url
+              field:
+                localizable: true
+                type: text
+                input_type: url
+                display: URL
+                validate:
+                  - required
+                  - url:http,https
+  verification:
+    display: 'Verification & Icons'
+    fields:
+      - handle: google_verification
+        field:
+          localizable: true
+          type: text
+          display: 'Google Search Console Verification'
+          instructions: 'Paste only the verification code, not the entire meta tag.'
+      - handle: bing_verification
+        field:
+          localizable: true
+          type: text
+          display: 'Bing Webmaster Tools Verification'
+          instructions: 'Paste only the verification code.'
+      - handle: pinterest_verification
+        field:
+          localizable: true
+          type: text
+          display: 'Pinterest Domain Verification'
+          instructions: 'Paste only the verification code.'
+      - handle: favicon
+        field:
+          localizable: true
+          type: assets
+          container: assets
+          max_files: 1
+          restrict: true
+          display: Favicon
+          instructions: 'A square ICO, PNG, or SVG icon.'
+          validate:
+            - 'mimes:ico,png,svg'
+      - handle: touch_icon
+        field:
+          localizable: true
+          type: assets
+          container: assets
+          max_files: 1
+          restrict: true
+          display: 'Apple Touch Icon'
+          instructions: 'A 180 × 180 pixel PNG.'
+          validate:
+            - 'mimes:png'
+      - handle: theme_color
+        field:
+          localizable: true
+          type: text
+          display: 'Browser Theme Color'
+          instructions: 'Optional hexadecimal color used by supported browsers.'
+          placeholder: '#ffffff'
+          validate:
+            - nullable
+            - 'regex:/^#[0-9a-fA-F]{6}$/'

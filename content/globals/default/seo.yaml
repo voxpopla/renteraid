@@ -1,0 +1,12 @@
+site_name: RenterAid
+default_title: RenterAid
+title_suffix: RenterAid
+title_separator: '|'
+description: 'RenterAid can help you fight eviction and pay for rent, utilities, and moving expenses. A service of the LA County Affordable Housing Solutions Agency.'
+noindex: false
+nofollow: false
+og_type: website
+og_locale: en_US
+twitter_card: summary_large_image
+structured_data: false
+theme_color: '#0133A0'
