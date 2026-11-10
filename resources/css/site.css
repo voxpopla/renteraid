@@ -26,6 +26,10 @@
 }
 
 @layer components {
+    .body-copy-secondary {
+        @apply text-base leading-normal sm:text-xl lg:text-2xl;
+    }
+
     .step-copy,
     .rich-copy {
         @apply leading-normal;

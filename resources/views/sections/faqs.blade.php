@@ -25,7 +25,7 @@
                                 </button>
                             </h3>
                             <div id="faqs-panel-{{ $loop->iteration }}" aria-labelledby="faqs-trigger-{{ $loop->iteration }}" x-show="open" x-collapse @if(!$openOnLoad) x-cloak @endif>
-                                <div class="rich-copy pb-6 text-lg leading-normal text-zinc-900 sm:text-2xl lg:pb-10 lg:text-4xl">
+                                <div class="rich-copy pb-6 text-lg leading-normal text-zinc-900 sm:text-2xl lg:pb-10 lg:text-3xl">
                                     {!! $faqField($question, 'copy') !!}
                                 </div>
                             </div>

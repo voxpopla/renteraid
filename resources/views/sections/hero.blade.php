@@ -25,7 +25,7 @@
 
             <h1 id="hero-heading" class="max-w-5xl font-display text-5xl leading-heading font-semibold text-blue sm:text-6xl lg:text-8xl">{{ $header }}</h1>
             @if($copy)
-                <p class="mt-4 max-w-5xl whitespace-pre-line text-xl leading-normal text-zinc-900 sm:mt-6 sm:text-2xl lg:mt-10 lg:text-4xl">{{ $copy }}</p>
+                <p class="mt-4 max-w-5xl whitespace-pre-line text-xl leading-normal text-zinc-900 sm:mt-6 sm:text-2xl lg:mt-10 lg:text-3xl">{{ $copy }}</p>
             @endif
             @if($label && $link)
                 <a href="{{ $link }}" @if($newTab) target="_blank" rel="noopener noreferrer" @endif class="mt-4 inline-flex bg-green px-5 py-2 font-display text-3xl leading-tight font-bold uppercase tracking-wide text-white transition hover:bg-green/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue sm:mt-6 sm:text-5xl lg:mt-8 lg:text-7xl">
@@ -40,7 +40,7 @@
         @if($logoTagline || count($logos ?? []))
             <div class="border-t border-slate-400 pt-4 sm:pt-6 lg:pt-8">
                 @if($logoTagline)
-                    <p class="text-xl leading-normal font-bold text-zinc-900 sm:text-2xl lg:text-4xl">{{ $logoTagline }}</p>
+                    <p class="body-copy-secondary font-bold text-zinc-900">{{ $logoTagline }}</p>
                 @endif
                 @if(count($logos ?? []))
                     <div class="mt-4 flex flex-wrap items-center gap-x-8 gap-y-6 sm:mt-6 lg:mt-8">

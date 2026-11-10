@@ -28,7 +28,7 @@
                                 </button>
                             </h3>
                             <div id="how-it-works-panel-{{ $loop->iteration }}" aria-labelledby="how-it-works-trigger-{{ $loop->iteration }}" x-show="open" x-collapse @if(!$openOnLoad) x-cloak @endif>
-                                <div class="space-y-5 pb-6 text-lg leading-normal text-zinc-900 sm:space-y-6 sm:text-2xl lg:space-y-8 lg:pb-10 lg:text-4xl">
+                                <div class="space-y-5 pb-6 text-lg leading-normal text-zinc-900 sm:space-y-6 sm:text-2xl lg:space-y-8 lg:pb-10 lg:text-3xl">
                                     @if(is_string($blocks))
                                         <div class="step-copy">{!! $blocks !!}</div>
                                     @else
