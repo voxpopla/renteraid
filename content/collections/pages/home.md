@@ -12,6 +12,7 @@ hero:
     open_in_new_tab: false
   logo_tagline: 'A service of the LA County Affordable Housing Solutions Agency'
   logos:
+    - lacahsalogo_lockup_brand.png
     - shla.png
     - dcba.png
     - iclc.png
@@ -1270,6 +1271,6 @@ faqs:
               type: text
               text: 'Waivers are available for households that have difficulty obtaining the required documentation. To request a waiver, [PROCESS FOR REQUESTING A WAIVER].'
 author: b8b55cce-0299-4994-bea3-c2e706f6cde1
-updated_by: b8b55cce-0299-4994-bea3-c2e706f6cde1
-updated_at: 1793724786
+updated_by: 4ed2d460-6c66-4b53-ae04-9f15e240cbcc
+updated_at: 1794593128
 ---
