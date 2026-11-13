@@ -14,7 +14,7 @@
 <section class="bg-white px-6 pt-16 pb-24 sm:px-10 sm:pt-24 sm:pb-36 lg:px-20 lg:pt-44 lg:pb-64" aria-labelledby="hero-heading">
     <div class="mx-auto max-w-7xl">
         <a href="{{ Statamic\Facades\Site::current()->url() }}" class="inline-block max-w-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue" aria-label="{{ __('RenterAid home') }}">
-            <img src="{{ asset('logo.svg') }}" alt="RenterAid" width="980" height="186" class="h-auto w-[968px] max-w-full">
+            <img src="{{ asset('assets/logo.png') }}" alt="RenterAid" width="2024" height="383" class="h-auto w-[968px] max-w-full">
         </a>
 
         <div class="relative isolate mt-6 min-h-[5.75em] pb-6 text-5xl sm:mt-10 sm:pb-8 sm:text-6xl lg:mt-14 lg:pb-10 lg:text-8xl">
